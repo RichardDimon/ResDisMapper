@@ -29,7 +29,7 @@
 
 rdm_IBD <- function(Gen_raw, Geo_raw, Dist_method = 1, IBD_method = 1){
   
-  gen_data <- adegenet::read.genepop(Gen_raw, ncode=3)
+  gen_data <- adegenet::read.genepop(Gen_raw, ncode=2)
 
   if(Dist_method==1){
     gen_dist <- poppr::diss.dist(gen_data)
